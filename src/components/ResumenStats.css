@@ -1,0 +1,64 @@
+.stats-wrap {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.stats-header {
+  margin-bottom: 8px;
+}
+
+.stats-titulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stats-saldo {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 4px 0;
+}
+
+.stats-sub {
+  font-size: 13px;
+  color: #aaa;
+  margin: 0 0 24px;
+}
+
+.stats-fila {
+  display: flex;
+  gap: 24px;
+}
+
+.stats-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stats-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.stats-dot.deposito { background: #4f7ef8; }
+.stats-dot.retiro   { background: #f8c44f; }
+
+.stats-item-label {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+}
+
+.stats-item-valor {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}

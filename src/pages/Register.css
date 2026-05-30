@@ -1,0 +1,133 @@
+.reg-bg {
+  min-height: 100vh;
+  background-color: #f0efed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.reg-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.reg-logo {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.reg-titulo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0;
+}
+
+.reg-subtitulo {
+  color: #888;
+  text-align: center;
+  margin: 8px 0 32px;
+  font-size: 14px;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reg-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.reg-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reg-campo label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.reg-opcional {
+  font-weight: 400;
+  color: #bbb;
+  font-size: 12px;
+}
+
+.reg-campo input {
+  padding: 12px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s;
+  background: #fafafa;
+  color: #1a1a1a;
+}
+
+.reg-campo input:focus {
+  border-color: #4f7ef8;
+  background: #fff;
+}
+
+.reg-error {
+  color: #e74c3c;
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+  background: #fdecea;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.reg-btn {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+
+.reg-btn:hover {
+  background: #333;
+}
+
+.reg-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.reg-login {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.reg-login a {
+  color: #4f7ef8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.reg-login a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,78 @@
+.tarjeta-wrap {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.tarjeta-card {
+  background: #4f7ef8;
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.tarjeta-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.tarjeta-chip {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.tarjeta-numero {
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.tarjeta-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjeta-nombre {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tarjeta-logo {
+  font-size: 22px;
+  opacity: 0.9;
+  letter-spacing: -8px;
+}
+
+.tarjeta-saldo-label {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.tarjeta-saldo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.tarjeta-vacia {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+}
