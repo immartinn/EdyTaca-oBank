@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useAuth } from '../context/AuthContext'
 import { supabase } from '../supabaseClient'
 import Sidebar from '../components/Sidebar'
-import { generarCSV, generarExcel, generarComprobantePDF } from '../utils/Reportes'
+import { generarCSV, generarExcel, generarComprobantePDF } from '../utils/reportes'
 import './Reportes.css'
 
 export default function Reportes() {
