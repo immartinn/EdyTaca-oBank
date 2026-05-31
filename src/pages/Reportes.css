@@ -247,4 +247,15 @@
   .rep-tabla td:nth-child(3) {
     display: none;
   }
+  rep-tabla th, .rep-tabla td {
+    padding: 12px 12px;
+    font-size: 12px;
+  }
+
+  .rep-tabla th:nth-child(3),
+  .rep-tabla td:nth-child(3),
+  .rep-tabla th:nth-child(4),
+  .rep-tabla td:nth-child(4) {
+    display: none;
+  }
 }
