@@ -231,31 +231,70 @@
 }   
 
 @media (max-width: 768px) {
-  .rep-main {
-    padding: 20px 16px 80px;
+
+  .rep-main,
+  .hist-main {
+    padding: 16px;
+    min-width: 0;
   }
 
   .rep-descargas {
     grid-template-columns: 1fr;
   }
 
-  .rep-titulo {
-    font-size: 24px;
+  .rep-card,
+  .hist-card {
+    overflow-x: auto;
+    border-radius: 16px;
   }
 
-  .rep-tabla th:nth-child(3),
-  .rep-tabla td:nth-child(3) {
-    display: none;
+  .rep-tabla,
+  .hist-tabla {
+    min-width: 600px;
   }
-  rep-tabla th, .rep-tabla td {
-    padding: 12px 12px;
+
+  .rep-tabla th,
+  .rep-tabla td,
+  .hist-tabla th,
+  .hist-tabla td {
+    padding: 10px 12px;
     font-size: 12px;
+    white-space: nowrap;
   }
 
+  /* Reportes */
   .rep-tabla th:nth-child(3),
   .rep-tabla td:nth-child(3),
   .rep-tabla th:nth-child(4),
   .rep-tabla td:nth-child(4) {
     display: none;
+  }
+
+  /* Historial */
+  .hist-tabla th:nth-child(3),
+  .hist-tabla td:nth-child(3),
+  .hist-tabla th:nth-child(4),
+  .hist-tabla td:nth-child(4) {
+    display: none;
+  }
+
+  .hist-filtros {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hist-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+
+  .hist-resumen {
+    flex-direction: column;
+  }
+
+  .rep-titulo,
+  .hist-titulo {
+    font-size: 24px;
   }
 }

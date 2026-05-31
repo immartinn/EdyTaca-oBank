@@ -202,19 +202,46 @@
 .hist-resumen-item strong.negativo { color: #c62828; }
 
 @media (max-width: 768px) {
+
+  .rep-main,
   .hist-main {
-    padding: 20px 16px 80px;
+    padding: 16px;
+    min-width: 0;
   }
 
-  .hist-titulo {
-    font-size: 24px;
+  .rep-descargas {
+    grid-template-columns: 1fr;
   }
 
-  .hist-filtros {
-    flex-direction: column;
-    align-items: flex-start;
+  .rep-card,
+  .hist-card {
+    overflow-x: auto;
+    border-radius: 16px;
   }
 
+  .rep-tabla,
+  .hist-tabla {
+    min-width: 600px;
+  }
+
+  .rep-tabla th,
+  .rep-tabla td,
+  .hist-tabla th,
+  .hist-tabla td {
+    padding: 10px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* Reportes */
+  .rep-tabla th:nth-child(3),
+  .rep-tabla td:nth-child(3),
+  .rep-tabla th:nth-child(4),
+  .rep-tabla td:nth-child(4) {
+    display: none;
+  }
+
+  /* Historial */
   .hist-tabla th:nth-child(3),
   .hist-tabla td:nth-child(3),
   .hist-tabla th:nth-child(4),
@@ -222,8 +249,69 @@
     display: none;
   }
 
+  .hist-filtros {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hist-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+
   .hist-resumen {
     flex-direction: column;
   }
+
+  .rep-titulo,
+  .hist-titulo {
+    font-size: 24px;
+  }
+  /* Evita que el sidebar deje espacio lateral */
+.hist-layout {
+  flex-direction: column;
 }
 
+.hist-main {
+  width: 100%;
+  margin-left: 0;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Filtros */
+.hist-filtros {
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Scroll horizontal para los botones */
+.hist-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  gap: 8px;
+  padding-bottom: 6px;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hist-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.hist-tab {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* Fecha ocupa todo el ancho */
+.hist-fecha {
+  width: 100%;
+  box-sizing: border-box;
+}
+}
