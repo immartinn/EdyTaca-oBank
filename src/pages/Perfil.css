@@ -288,3 +288,21 @@
   border-color: #888;
   color: #444;
 }
+
+@media (max-width: 768px) {
+  .perfil-main {
+    padding: 20px 16px 80px;
+  }
+
+  .perfil-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-titulo {
+    font-size: 24px;
+  }
+
+  .perfil-fila {
+    grid-template-columns: 1fr;
+  }
+}

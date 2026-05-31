@@ -229,3 +229,22 @@
   font-size: 14px;
   padding: 60px 0;
 }   
+
+@media (max-width: 768px) {
+  .rep-main {
+    padding: 20px 16px 80px;
+  }
+
+  .rep-descargas {
+    grid-template-columns: 1fr;
+  }
+
+  .rep-titulo {
+    font-size: 24px;
+  }
+
+  .rep-tabla th:nth-child(3),
+  .rep-tabla td:nth-child(3) {
+    display: none;
+  }
+}

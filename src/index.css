@@ -36,3 +36,13 @@ input:disabled {
   background-color: #f5f5f5 !important;
   color: #888 !important;
 }
+
+/*
+   RESPONSIVE GLOBAL
+*/
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}

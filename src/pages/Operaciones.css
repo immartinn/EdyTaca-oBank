@@ -274,3 +274,18 @@
   font-size: 13px;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .op-main {
+    padding: 20px 16px 80px;
+  }
+
+  .op-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .op-titulo {
+    font-size: 24px;
+  }
+}
+

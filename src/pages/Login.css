@@ -123,3 +123,10 @@
 .login-register a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .login-card {
+    padding: 36px 24px;
+    margin: 16px;
+  }
+}

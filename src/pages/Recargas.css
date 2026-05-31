@@ -264,3 +264,22 @@
   font-size: 14px;
   padding: 40px 0;
 }
+
+@media (max-width: 768px) {
+  .rec-main {
+    padding: 20px 16px 80px;
+  }
+
+  .rec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rec-titulo {
+    font-size: 24px;
+  }
+
+  .rec-montos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+

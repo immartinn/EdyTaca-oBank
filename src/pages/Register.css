@@ -131,3 +131,14 @@
 .reg-login a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .reg-card {
+    padding: 36px 24px;
+    margin: 16px;
+  }
+
+  .reg-fila {
+    grid-template-columns: 1fr;
+  }
+}

@@ -260,3 +260,17 @@
   font-size: 14px;
   padding: 40px 0;
 }
+
+@media (max-width: 768px) {
+  .apart-main {
+    padding: 20px 16px 80px;
+  }
+
+  .apart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apart-titulo {
+    font-size: 24px;
+  }
+}

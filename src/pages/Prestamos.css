@@ -236,3 +236,21 @@
   font-size: 14px;
   padding: 40px 0;
 }
+
+@media (max-width: 768px) {
+  .prest-main {
+    padding: 20px 16px 80px;
+  }
+
+  .prest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prest-titulo {
+    font-size: 24px;
+  }
+
+  .prest-plazos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
